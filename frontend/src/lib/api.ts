@@ -3,7 +3,7 @@ const API_BASE_URL =
 
 export interface HealthResponse {
   status: string;
-  service: str;
+  service: string;
   version: string;
   environment: string;
 }
