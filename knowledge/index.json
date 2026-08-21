@@ -1,0 +1,179 @@
+{
+  "nodes": [
+    {
+      "id": "node:ai-machine-learning-40b8b962",
+      "title": "Machine Learning Overview",
+      "path": "ai/machine-learning.md",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ml",
+        "data-science"
+      ],
+      "snippet": "Machine Learning Overview\n\nMachine learning is a subset of artificial intelligence focused on building systems that learn from data.\n\nKey Subfields\n- Supervised Learning\n- Unsupervised Learning\n- [[Neural Networks]]\n\nRelated programming language: [[P...",
+      "frontmatter": {
+        "title": "Machine Learning Overview",
+        "category": "AI",
+        "tags": [
+          "ai",
+          "ml",
+          "data-science"
+        ],
+        "date": "2026-08-21"
+      }
+    },
+    {
+      "id": "node:ai-neural-networks-0e20f600",
+      "title": "Neural Networks",
+      "path": "ai/neural-networks.md",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "deep-learning"
+      ],
+      "snippet": "Neural Networks\n\nNeural networks are computing systems inspired by biological neural networks.\n\nThey form the core foundation of modern [[Machine Learning Overview]].\n\nFuture integration topic: [[Future Quantum Module]]",
+      "frontmatter": {
+        "title": "Neural Networks",
+        "category": "AI",
+        "tags": [
+          "ai",
+          "deep-learning"
+        ],
+        "date": "2026-08-21"
+      }
+    },
+    {
+      "id": "node:friday-architecture-7ba97c11",
+      "title": "FRIDAY Architecture",
+      "path": "friday/architecture.md",
+      "category": "friday",
+      "tags": [
+        "friday",
+        "system",
+        "architecture"
+      ],
+      "snippet": "FRIDAY Architecture\n\nFRIDAY is a personal AI intelligence system built with a modular architecture.\n\nSubsystems\n- Knowledge Engine (Ingests [[Python]] Markdown notes)\n- Backend APIs using [[FastAPI]]\n- Next.js UI Shell",
+      "frontmatter": {
+        "title": "FRIDAY Architecture",
+        "category": "friday",
+        "tags": [
+          "friday",
+          "system",
+          "architecture"
+        ],
+        "date": "2026-08-21"
+      }
+    },
+    {
+      "id": "node:programming-fastapi-b6597ab3",
+      "title": "FastAPI",
+      "path": "programming/fastapi.md",
+      "category": "programming",
+      "tags": [
+        "web",
+        "framework",
+        "python"
+      ],
+      "snippet": "FastAPI\n\nFastAPI is a modern, high-performance web framework for building APIs with [[Python]] based on standard Python type hints.\n\nUsed in FRIDAY System Architecture: [[FRIDAY Architecture]]",
+      "frontmatter": {
+        "title": "FastAPI",
+        "category": "programming",
+        "tags": [
+          "web",
+          "framework",
+          "python"
+        ],
+        "date": "2026-08-21"
+      }
+    },
+    {
+      "id": "node:programming-python-ba1905ee",
+      "title": "Python",
+      "path": "programming/python.md",
+      "category": "programming",
+      "tags": [
+        "language",
+        "python",
+        "backend"
+      ],
+      "snippet": "Python\n\nPython is a high-level, interpreted programming language widely used in AI, data science, and web development.\n\nFast web APIs in Python are powered by [FastAPI](../programming/fastapi.md) or [[FastAPI]].",
+      "frontmatter": {
+        "title": "Python",
+        "category": "programming",
+        "tags": [
+          "language",
+          "python",
+          "backend"
+        ],
+        "date": "2026-08-21"
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "node:ai-machine-learning-40b8b962",
+      "target": "node:ai-neural-networks-0e20f600",
+      "type": "wikilink",
+      "alias": null
+    },
+    {
+      "source": "node:ai-machine-learning-40b8b962",
+      "target": "node:programming-python-ba1905ee",
+      "type": "wikilink",
+      "alias": null
+    },
+    {
+      "source": "node:ai-neural-networks-0e20f600",
+      "target": "node:ai-machine-learning-40b8b962",
+      "type": "wikilink",
+      "alias": null
+    },
+    {
+      "source": "node:friday-architecture-7ba97c11",
+      "target": "node:programming-fastapi-b6597ab3",
+      "type": "wikilink",
+      "alias": null
+    },
+    {
+      "source": "node:friday-architecture-7ba97c11",
+      "target": "node:programming-python-ba1905ee",
+      "type": "wikilink",
+      "alias": null
+    },
+    {
+      "source": "node:programming-fastapi-b6597ab3",
+      "target": "node:friday-architecture-7ba97c11",
+      "type": "wikilink",
+      "alias": null
+    },
+    {
+      "source": "node:programming-fastapi-b6597ab3",
+      "target": "node:programming-python-ba1905ee",
+      "type": "wikilink",
+      "alias": null
+    },
+    {
+      "source": "node:programming-python-ba1905ee",
+      "target": "node:programming-fastapi-b6597ab3",
+      "type": "wikilink",
+      "alias": null
+    }
+  ],
+  "unresolved_references": [
+    {
+      "source_id": "node:ai-neural-networks-0e20f600",
+      "source_path": "ai/neural-networks.md",
+      "target_title": "Future Quantum Module",
+      "alias": null,
+      "type": "wikilink"
+    }
+  ],
+  "stats": {
+    "documents_indexed": 5,
+    "relationships": 8,
+    "unresolved_links": 1,
+    "categories_count": 3,
+    "files_discovered": 5,
+    "errors": 0
+  }
+}

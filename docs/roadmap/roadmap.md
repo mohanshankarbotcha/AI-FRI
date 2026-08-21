@@ -1,6 +1,6 @@
-# FRIDAY-AI Development Roadmap
+# FRIDAY Development Roadmap
 
-> **Current Milestone**: Level 0 Complete
+> **Current Milestone**: Level 2 Complete
 
 ---
 
@@ -16,32 +16,40 @@
 
 ---
 
-### Level 1: Core Engine & Data Storage Baseline (PLANNED)
-- [ ] Establish backend application runtime environment (Python / TypeScript baseline).
-- [ ] Implement local file ingestion engine in `knowledge/`.
-- [ ] Define initial SQLite / local storage schemas for document metadata and memory tags.
-- [ ] Set up basic CLI or REST API interface endpoints.
-- [ ] Add unit test harness in `tests/`.
+### Level 1: Application Shell & Health Infrastructure (COMPLETED)
+- [x] Establish Next.js 14 frontend application shell (`frontend/`).
+- [x] Establish dark technical visual identity (cyan/emerald accents, typography).
+- [x] Establish FastAPI backend engine (`backend/app/main.py`).
+- [x] Implement health check endpoints (`GET /health` & `GET /api/health`).
+- [x] Implement centralized API Client abstraction (`frontend/src/lib/api.ts`).
+- [x] Configure Pydantic settings & CORS handling.
+- [x] Add status panel UI component (`StatusPanel.tsx`).
 
 ---
 
-### Level 2: Knowledge Ingestion & Retrieval (PLANNED)
-- [ ] Text chunking, tokenization, and embedding generation.
-- [ ] Local vector store integration.
-- [ ] Grounded RAG query pipeline with citation tracking.
-- [ ] Memory capture interface ("Remember that...").
+### Level 2: Knowledge Engine (COMPLETED)
+- [x] Create Markdown parser (frontmatter, title resolution, tags, category).
+- [x] Implement wikilinks (`[[Note]]`) and Markdown link extraction.
+- [x] Implement unresolved links tracker (`[[Nonexistent]]`).
+- [x] Implement stable node ID generator (`node:<slug>-<hash>`).
+- [x] Build deterministic Knowledge Graph builder & JSON indexer (`knowledge/index.json`).
+- [x] Build CLI indexer script (`scripts/index_knowledge.py`).
+- [x] Expose Knowledge REST APIs (`GET /api/knowledge`, `/nodes/:id`, `/search`, `POST /reindex`).
+- [x] Create Development Knowledge Inspector UI (`KnowledgeInspector.tsx`).
+- [x] Write automated Pytest test suite for health API, parser, indexer, and knowledge APIs (`tests/`).
 
 ---
 
-### Level 3: Interactive UI & Knowledge Graph (PLANNED)
-- [ ] Web frontend interface for chat and knowledge management.
-- [ ] 3D graph visualizer for exploring node relationships.
-- [ ] Source provenance overlay for grounded answers.
+### Level 3: Semantic Retrieval & Vector Indexing (PLANNED)
+- [ ] Local text embeddings generation & vector store integration.
+- [ ] Hybrid keyword + semantic search.
+- [ ] Grounded RAG context builder with citation tracking.
 
 ---
 
-### Level 4: Voice, Multi-Modal & Controlled Tools (PLANNED)
-- [ ] Speech-to-text (STT) and text-to-speech (TTS) integration.
+### Level 4: 3D Galaxy Graph, Voice & Memory (PLANNED)
+- [ ] 3D WebGL / Three.js galaxy visualizer for knowledge nodes.
+- [ ] Voice STT / TTS interaction engine.
 - [ ] Assistant personality engine.
-- [ ] Controlled tool execution interface with user permission prompts.
-- [ ] Security hardening and integration tests.
+- [ ] Memory capture store (`memory/`).
+- [ ] Controlled tool execution framework.
